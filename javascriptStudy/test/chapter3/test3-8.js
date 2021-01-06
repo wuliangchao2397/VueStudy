@@ -32,7 +32,12 @@ var s3 = pattern.toString()
 // var s4 = new Date(2020,1,6).toString()//日期
 var s4 = new Date(2020,1,6).valueOf()//日期
 var list = {key1:1,key2:2,key3:3};
-// var s5 = list.toString();//普通对象
-var s5 = list.valueOf();
+var s5 = list.toString();//普通对象
+// var s5 = list.valueOf();
 var s6 = new Error("test").toString()//error类
 console.log(s1,s2,s3,s4,s5,s6);
+
+var now = new Date();
+console.log(typeof(now + 1));
+console.log(typeof(list -1));
+console.log(typeof(now - 1));
