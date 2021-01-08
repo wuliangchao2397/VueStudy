@@ -16,3 +16,22 @@ console.log((a?b:c?d:e?f:g)==(a?b:(c?d:(e?f:g))));
 console.log(7<<1);//14
 console.log(7<<2);//28
 console.log((~7).toString(2));
+
+// 4-12。2
+var global_eval = eval;
+var x = "global",y="global";
+function f2(){
+    console.log(x);
+    var x = "local";
+    eval("x += ' changed';");
+    return x;
+}
+
+function f3(){
+    var y1 = "local";
+    eval(" y += ' changed';");//和书本的规则不同，别名引用不能找到全局变量
+    return y1;
+}
+
+console.log(f2(),x);
+console.log(f3(),y);
