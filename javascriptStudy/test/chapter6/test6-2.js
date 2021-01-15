@@ -8,4 +8,4 @@ var customer = {
 for(i = 0;i < 4;i++){
     addr += customer["address" + i] + '\n';
 }
-console.log(addr);
+console.log(addr); 
