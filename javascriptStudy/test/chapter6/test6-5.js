@@ -1,4 +1,6 @@
 var q = {x:1,y:2,z:3};
+var o = {x:0,r:9};
+
 function inherit(p){
     if(p == null) throw TypeError();
     if(Object.create)
@@ -9,13 +11,20 @@ function inherit(p){
     f.prototype = p;
     return new f();
 }
-var o = {x:0,r:9};
+
 o = inherit(q);
-o.r = 7;
-console.log(o.propertyIsEnumerable("toString"));
+console.log(o);
+// o.r = 7;
+// console.log(o.propertyIsEnumerable("toString"));
 for(p in o){
     if(!o.hasOwnProperty(p)) continue;
     if(typeof o[p] === "function") continue;
-    console.log(p);
+    console.log(o[p]);
 }
 
+function extend(o,p){
+    for (prop in p){
+        o[prop] = p[prop];
+    }
+    return o;
+}
