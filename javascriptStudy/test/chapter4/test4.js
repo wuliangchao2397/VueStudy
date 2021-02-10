@@ -15,6 +15,8 @@ console.log((a?b:c?d:e?f:g)==(a?b:(c?d:(e?f:g))));
 // 4-8.3 位运算符测试
 console.log(7<<1);//14
 console.log(7<<2);//28
+console.log(1>>2);
+console.log(-1>>>63);
 console.log((~7).toString(2));
 
 // 4-12。2
