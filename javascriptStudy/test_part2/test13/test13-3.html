@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Table of Factorials</h1>
+    </body>
+    <script>
+        function factorials(n){
+            if(n <= 1)return n;
+            else return n*factorials(n-1);
+        }
+        document.write("<table>"
+            + "<tr><th>n</th><th>n!</th></tr>");
+        for(var i = 1;i <= 10;i++){
+            document.write("<tr><td>" + i + "</td><td>" + factorials(i) + "</td></tr>");
+        }
+        document.write("</table>");
+        document.write("Generated at " + new Date());
+    </script>
+</html>
