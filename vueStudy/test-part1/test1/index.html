@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <body>
+        <div id="app">
+            <p>{{foo}}</p>
+            <!-- 这里不会更新 -->
+            <button v-on:click="foo='test'">Change it</button>
+        </div>
+    </body>
+    <script src="../test1/index.js"></script>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{testText}}</p>
+            <span v-html="testHtml"></span>
+            <button v-bind:disabled="isDisable"></button>
+            <div v-bind:id=mark></div>
+        </div>
+    </body>
+    <script src="../test3/index.js"></script>
+</html>
