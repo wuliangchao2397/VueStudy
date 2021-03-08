@@ -86,7 +86,7 @@
 * 侦听器
   * 大多时候使用计算属性，有时用自定义的watch会更加有效
 
-## 6、计算属性和侦听器
+## 6、Class和Style绑定
 
 * 通过v-bind来对attribute进行设置，针对class和style都有优化
 * 绑定HTML class
@@ -108,4 +108,10 @@
 * v-show同样是根据条件展示元素，不同的是v-show的元素会始终保留在DOM中，而且不能对<template>使用，也不支持v-else
 * 注意v-if和v-show的区别，v-if是真的条件渲染，不达成条件什么都不做，而v-show则是照常渲染，只是切换了css
 * v-if和v-for放在一起时，v-for优先级更高，一般情况不要一起使用
+
+## 8、列表渲染
+
+* v-for对数组使用，遍历数组内部所有内容
+* v-for对对象使用，会自动遍历全部property
+* 维护模式：当
 
