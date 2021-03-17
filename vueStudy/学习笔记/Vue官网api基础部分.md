@@ -133,3 +133,5 @@
 ## 11、组件
 
 * 可复用的vue实例
+* 使用Vue.component()来创建，内部变量可以内部自身套用，通过props自设title名，template设置模板，多种标签组合使用时，用div包含起来
+* 

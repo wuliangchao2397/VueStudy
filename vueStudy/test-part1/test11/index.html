@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>TestPage</title>
+    <head>
+        <script src="../../js/vue.js"></script>
+    </head>
+    <body>
+        <div id="example">
+            <button 
+            v-for="tab in tabs"
+            v-bind:key="tab"
+            v-on:click="currentTab = tab"
+            >{{tab}}</button>
+            <component v-bind:is="currentTabComponent"></component>
+        </div>
+    </body>
+    <script src="../test11/index.js"></script>
+</html>
