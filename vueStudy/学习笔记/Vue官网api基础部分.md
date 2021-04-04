@@ -48,7 +48,7 @@
 
   * v-bind的缩写：
 
-    ``` htm
+    ``` html
     <!-- 完整语法 -->
     <a v-bind:href="url">...</a>
     
